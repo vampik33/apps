@@ -1922,6 +1922,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@polkadot/app-reputation-referenda@workspace:packages/page-reputation-referenda":
+  version: 0.0.0-use.local
+  resolution: "@polkadot/app-reputation-referenda@workspace:packages/page-reputation-referenda"
+  dependencies:
+    chart.js: "npm:^4.4.1"
+  peerDependencies:
+    react: "*"
+    react-dom: "*"
+    react-is: "*"
+  languageName: unknown
+  linkType: soft
+
 "@polkadot/app-rpc@workspace:packages/page-rpc":
   version: 0.0.0-use.local
   resolution: "@polkadot/app-rpc@workspace:packages/page-rpc"

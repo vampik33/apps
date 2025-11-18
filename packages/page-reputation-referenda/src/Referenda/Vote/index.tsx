@@ -145,7 +145,7 @@ function Voting ({ className, id, isConvictionVote, isMember, members, palletVot
                       id={id}
                       isAye
                       onChange={setParams}
-                      voteLockingPeriod={api.consts[palletVote as 'convictionVoting'].voteLockingPeriod}
+                      voteLockingPeriod={api.consts[palletVote as 'reputationVoting'].voteLockingPeriod}
                     />
                   )
                   : voteTypeIndex === 1
@@ -154,7 +154,7 @@ function Voting ({ className, id, isConvictionVote, isMember, members, palletVot
                         accountId={accountId}
                         id={id}
                         onChange={setParams}
-                        voteLockingPeriod={api.consts[palletVote as 'convictionVoting'].voteLockingPeriod}
+                        voteLockingPeriod={api.consts[palletVote as 'reputationVoting'].voteLockingPeriod}
                       />
                     )
                     : voteTypeIndex === 2

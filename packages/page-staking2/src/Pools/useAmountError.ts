@@ -10,7 +10,7 @@ import { createNamedHook, useApi, useCall } from '@polkadot/react-hooks';
 import { BN_ZERO, hexToString } from '@polkadot/util';
 
 // Consider only OpenGov-related locks
-const openGovLockIds = ['referenda', 'convictionVoting', 'pyconvot'];
+const openGovLockIds = ['referenda', 'convictionVoting', 'pyconvot', 'pyrepvot'];
 
 function useAmountErrorImpl (accountId?: string | null, amount?: BN | null, minAmount?: BN | null): boolean {
   const { api } = useApi();

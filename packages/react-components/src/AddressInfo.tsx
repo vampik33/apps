@@ -557,6 +557,7 @@ function AddressInfo (props: Props): React.ReactElement<Props> {
     democrac: t('via Democracy/Vote'),
     phrelect: t('via Council/Vote'),
     pyconvot: t('via Referenda/Vote'),
+    pyrepvot: t('via Referenda/Vote'),
     'staking ': t('via Staking/Bond'),
     'vesting ': t('via Vesting')
   });

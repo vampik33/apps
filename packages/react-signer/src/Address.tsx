@@ -101,7 +101,7 @@ function filterProxies (
 
         case 'Governance':
           return checkNested(address) || (
-            ['convictionVoting', 'council', 'councilCollective', 'democracy', 'elections', 'electionsPhragmen', 'fellowshipCollective', 'fellowshipReferenda', 'phragmenElection', 'poll', 'referenda', 'society', 'technicalCommittee', 'tips', 'treasury', 'whitelist'].includes(section)
+            ['convictionVoting', 'council', 'councilCollective', 'democracy', 'elections', 'electionsPhragmen', 'fellowshipCollective', 'fellowshipReferenda', 'phragmenElection', 'poll', 'referenda', 'reputationVoting', 'society', 'technicalCommittee', 'tips', 'treasury', 'whitelist'].includes(section)
           );
 
         case 'IdentityJudgement':

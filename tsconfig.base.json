@@ -61,7 +61,7 @@
       "@polkadot/app-referenda/Referenda": ["page-referenda/src/Referenda/index.tsx"],
       "@polkadot/app-referenda/useAccountLocks": ["page-referenda/src/useAccountLocks.ts"],
       "@polkadot/app-referenda/useCounter": ["page-referenda/src/useCounter.ts"],
-      "@polkadot/app-reputation-referenda": ["page-referenda/src/index.tsx"],
+      "@polkadot/app-reputation-referenda": ["page-reputation-referenda/src/index.tsx"],
       "@polkadot/app-reputation-referenda/Referenda": ["page-reputation-referenda/src/Referenda/index.tsx"],
       "@polkadot/app-reputation-referenda/useAccountLocks": ["page-reputation-referenda/src/useAccountLocks.ts"],
       "@polkadot/app-reputation-referenda/useCounter": ["page-reputation-referenda/src/useCounter.ts"],

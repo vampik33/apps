@@ -98,7 +98,7 @@ function Delegate ({ className, palletReferenda, palletVote, tracks }: Props): R
   const batchInner = useMemo(
     () => balance && conviction >= 0 && toAccount && includeTracks
       ? (isAllTracks ? includeTracks : [trackId]).map((trackId) =>
-        api.tx[palletVote as 'convictionVoting'].delegate(trackId, toAccount, conviction, balance)
+        api.tx[palletVote as 'reputationVoting'].delegate(trackId, toAccount, conviction, balance)
       )
       : null,
     [api, balance, conviction, includeTracks, isAllTracks, palletVote, toAccount, trackId]
@@ -175,7 +175,7 @@ function Delegate ({ className, palletReferenda, palletVote, tracks }: Props): R
                   label={t('conviction')}
                   onChange={setConviction}
                   value={conviction}
-                  voteLockingPeriod={api.consts[palletVote as 'convictionVoting'].voteLockingPeriod}
+                  voteLockingPeriod={api.consts[palletVote as 'reputationVoting'].voteLockingPeriod}
                 />
               </Modal.Columns>
             </Modal.Content>

@@ -31,7 +31,7 @@ interface ValueState {
   value: BN;
 }
 
-const LOCKS_ORDERED = ['pyconvot', 'democrac', 'phrelect'] as const;
+const LOCKS_ORDERED = ['pyconvot', 'pyrepvot', 'democrac', 'phrelect'] as const;
 
 function getValues (api: ApiPromise, selectedId: string | null | undefined, noDefault: boolean | undefined, allBalances: DeriveBalancesAll, existential: BN, isReferenda: boolean): ValueState {
   const sortedLocks = allBalances.lockedBreakdown

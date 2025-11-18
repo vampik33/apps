@@ -35,7 +35,7 @@ function App ({ basePath, className }: Props): React.ReactElement<Props> {
       <Referenda
         isConvictionVote
         palletReferenda='referenda'
-        palletVote='convictionVoting'
+        palletVote='reputationVoting'
       />
     </main>
   );

@@ -6,7 +6,7 @@ import type { BN } from '@polkadot/util';
 
 export type PalletReferenda = 'referenda' | 'rankedPolls' | 'fellowshipReferenda'| 'ambassadorReferenda';
 
-export type PalletVote = 'convictionVoting' | 'rankedCollective' | 'fellowshipCollective' | 'ambassadorCollective';
+export type PalletVote = 'reputationVoting' | 'rankedCollective' | 'fellowshipCollective' | 'ambassadorCollective';
 
 export interface ReferendaGroup {
   key: string;

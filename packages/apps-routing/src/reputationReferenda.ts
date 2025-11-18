@@ -18,7 +18,7 @@ export default function create (t: TFunction): Route {
     group: 'governance',
     icon: 'person-booth',
     name: 'reputation-referenda',
-    text: t('nav.referenda', 'Referenda', { ns: 'apps-routing' }),
+    text: t('nav.reputation-referenda', 'Reputation Referenda', { ns: 'apps-routing' }),
     useCounter
   };
 }

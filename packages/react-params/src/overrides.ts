@@ -17,6 +17,7 @@ export const balanceCalls = [
   'identity.requestJudgement', 'identity.setFee',
   'nominationPools.bondExtra', 'nominationPools.create', 'nominationPools.createWithPoolId', 'nominationPools.join', 'nominationPools.unbond',
   'phragmenElection.vote',
+  'reputationVoting.delegate', 'reputationVoting.vote',
   'society.bid', 'society.vouch',
   'staking.bond', 'staking.bondExtra', 'staking.rebond', 'staking.unbond',
   'tips.tip', 'tips.tipNew',
@@ -35,6 +36,7 @@ export const balanceEvents = [
   'democracy.Voted',
   'nominationPools.Bonded', 'nominationPools.PaidOut', 'nominationPools.PoolSlashed', 'nominationPools.Unbonded', 'nominationPools.UnbondingPoolSlashed',
   'referenda.DecisionDepositPlaced', 'referenda.DecisionDepositRefunded', 'referenda.DepositSlashed', 'referenda.SubmissionDepositRefunded',
+  'reputationVoting.Voted',
   'staking.Bonded', 'staking.Rewarded', 'staking.Unbonded', 'staking.Withdrawn',
   'transactionPayment.TransactionFeePaid',
   'treasury.Deposit'

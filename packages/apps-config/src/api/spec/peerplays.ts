@@ -305,7 +305,30 @@ const definitions: OverrideBundleDefinition = {
           parent: 'Option<AccountId>',
           children: 'Vec<AccountId>'
         },
-        WildcardThresholdType: 'u32'
+        WildcardThresholdType: 'u32',
+        Conviction: {
+          _enum: [
+            'None',
+            'Locked1x',
+            'Locked2x',
+            'Locked3x',
+            'Locked4x',
+            'Locked5x',
+            'Locked6x'
+          ]
+        },
+        Vote: '(u8, u8)',
+        AccountVote: {
+          _enum: {
+            Standard: '(Vote, Balance)',
+            Split: '(Balance, Balance)',
+            SplitAbstain: '(Balance, Balance, Balance)'
+          }
+        },
+        PalletReputationVotingVote: 'Vote',
+        PalletReputationVotingVoteConviction: 'Conviction',
+        PalletReputationVotingVoteVote: 'Vote',
+        PalletReputationVotingVoteAccountVote: 'AccountVote'
       }
     }
   ]

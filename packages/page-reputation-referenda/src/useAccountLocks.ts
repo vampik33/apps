@@ -71,7 +71,7 @@ function getRefParams (votes?: [classId: BN, refIds: BN[], casting: PalletConvic
 }
 
 function getLocks (api: ApiPromise, palletVote: PalletVote, votes: [classId: BN, refIds: BN[], casting: PalletConvictionVotingVoteCasting][], referenda: [BN, PalletReferendaReferendumInfoConvictionVotingTally][]): Lock[] {
-  const lockPeriod = api.consts[palletVote].voteLockingPeriod as BN;
+  const lockPeriod = api.consts[palletVote].voteLockingPeriod as unknown as BN;
   const locks: Lock[] = [];
 
   for (let i = 0, voteCount = votes.length; i < voteCount; i++) {

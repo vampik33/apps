@@ -23,10 +23,7 @@ function VoteStandard ({ accountId, id, isAye, onChange, voteLockingPeriod }: Pr
     onChange([id, {
       Standard: {
         balance,
-        vote: {
-          aye: isAye,
-          conviction
-        }
+        vote: [isAye ? 1 : 0, conviction]
       }
     }]);
   }, [balance, conviction, id, isAye, onChange]);

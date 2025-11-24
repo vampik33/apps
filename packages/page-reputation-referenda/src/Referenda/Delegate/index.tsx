@@ -175,7 +175,7 @@ function Delegate ({ className, palletReferenda, palletVote, tracks }: Props): R
                   label={t('conviction')}
                   onChange={setConviction}
                   value={conviction}
-                  voteLockingPeriod={api.consts[palletVote as 'reputationVoting'].voteLockingPeriod}
+                  voteLockingPeriod={api.consts[palletVote as 'reputationVoting'].voteLockingPeriod as unknown as BN}
                 />
               </Modal.Columns>
             </Modal.Content>
